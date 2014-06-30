@@ -310,7 +310,7 @@ function addLink(text, link){
 }
 
 function addLinks(){
-    addLink('Privacy • ', 'privacy.html');
+    addLink('Privacy • ', 'privacy/index.html');
     addLink('• Contact', 'javascript:Contact()');
     
 }
