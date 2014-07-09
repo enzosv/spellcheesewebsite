@@ -86,8 +86,21 @@ function LoadContent() {
     for(var j=0; j<str.length; j++){
         addLetter(str.charAt(j) + "s" + colors.charAt(Math.floor(Math.random() * 5)), getNumber(), j);
     }
-    addImage('roboFrame', 0);
-    addImage('deviceFrame', 1);
+    if(imageSize > 810 )
+    {
+        addImage('roboFrame4k', 0);
+        addImage('deviceFrame4k', 1);
+    } else if(imageSize > 495){
+        addImage('roboFrame1080', 0);
+        addImage('deviceFrame1080', 1);
+    } else if(imageSize > 417){
+        addImage('roboFrame900', 0);
+        addImage('deviceFrame900', 1);
+    } else{
+        addImage('roboFrame768', 0);
+        addImage('deviceFrame768', 1);
+    }
+    
     
     addBadge();
     addTwitter();
