@@ -454,7 +454,7 @@ function skipAnimation(){
     images[1].draw();
 
     if(!badge.added){
-        document.body.appendChild(badge);
+        //document.body.appendChild(badge);
         badge.added = true;
     }
 
