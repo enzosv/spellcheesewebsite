@@ -510,7 +510,7 @@ function addTwitter(){
     tI = img;
     img.position ='absolute';
     a.appendChild(img);
-    a.href ='https://twitter.com/home?status=Check this out! ' + document.URL;
+    a.href ='https://twitter.com/home?status=Teach kids to read using photos! ' + document.URL;
     a.id = 'Twitter';
     a.style.position='absolute';
 
