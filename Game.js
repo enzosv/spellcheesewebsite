@@ -219,7 +219,7 @@ function moveLetter(index){
     var directionX = (letter.originalX-letter.posX) / distance;
     var directionY = (letter.originalY-letter.posY) / distance;
     //var speed = distance * 0.015625;
-    var speed = 0.6;
+    var speed = 0.8;
     letters[index].posX += directionX * delta * speed;
     letters[index].posY += directionY *delta * speed;
     if(Math.abs(letters[index].posX - letters[index].originalX) < directionX*delta*speed +1){
@@ -378,7 +378,7 @@ function addBadge(){
     scaleBadgeImage = img;
     // img.position ='absolute';
     a.appendChild(img);
-    a.href = 'http://www.google.com';
+    a.href = 'http://www.bit.ly/spellcheese';
     a.id = 'Badge';
     a.style.position='absolute';
 
@@ -397,7 +397,7 @@ function addBadge(){
 function moveBadge(){
     // badge.posY += delta *0.2;
     if(!badge.added){
-        //document.body.appendChild(badge);
+        document.body.appendChild(badge);
         badge.added = true;
     }
     // if(Math.abs(badge.posY - height*0.8963) < delta * 0.2){
@@ -406,8 +406,8 @@ function moveBadge(){
     // }
     // badge.style.top = badge.posY + 'px';
 
-    badge.posY += delta*2;
-    if(badge.posY + delta*2 > height){
+    badge.posY += delta*4;
+    if(badge.posY + delta*4 > height){
         badge.posY = height;
         badge.done = true;
     } else{
@@ -454,7 +454,7 @@ function skipAnimation(){
     images[1].draw();
 
     if(!badge.added){
-        //document.body.appendChild(badge);
+        document.body.appendChild(badge);
         badge.added = true;
     }
 
@@ -510,7 +510,7 @@ function addTwitter(){
     tI = img;
     img.position ='absolute';
     a.appendChild(img);
-    a.href ='https://twitter.com/home?status=Teach kids to read using photos! ' + document.URL;
+    a.href ='https://twitter.com/home?status=Time to make use of all those baby photos! bit.ly/spellcheese';
     a.id = 'Twitter';
     a.style.position='absolute';
 
@@ -531,7 +531,7 @@ function addTwitter(){
     fI = img2;
     img2.position ='absolute';
     b.appendChild(img2);
-    b.href = 'https://www.facebook.com/sharer/sharer.php?u=' + document.URL;
+    b.href = 'https://www.facebook.com/sharer/sharer.php?u=bit.ly/spellcheese';
     b.id = 'facebook';
     b.style.position='absolute';
 
@@ -552,7 +552,7 @@ function addTwitter(){
     gI = img3;
     img3.position ='absolute';
     c.appendChild(img3);
-    c.href ='https://plus.google.com/share?url=' + document.URL;
+    c.href ='https://plus.google.com/share?url=bit.ly/spellcheese';
     c.id = 'google';
     c.style.position='absolute';
 
